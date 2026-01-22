@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- APP NAME CENTER -->
+        <h2 style="
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: white;
+    ">
+            UDAAN ✈
+        </h2>
+
+        <!-- LOGOUT -->
+        <button class="logout" onclick="logout()">Logout</button>
+
+        <!-- MENU -->
+        <div id="menu" class="menu">
+            <div onclick="go('home.html')" style="color: black;">🏠 Home</div>
+            <div onclick="go('attendance.html')" style="color: black">📋 Attendance</div>
+            <div onclick="go('graph.html')" style="color:black">📊 Graph</div>
+            <div onclick="go('profile.html')" style="color:black">👤 User Profile</div>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1 class="fade-in">Welcome to My Platform</h1>
+        <p class="fade-in delay">Smart • Secure • Simple</p>
+
+        <button class="chat-btn" onclick="openChatbot()">
+            🤖 Open Chatbot
+    </section>
+
+    <!-- SCROLL SECTION -->
+    <section class="section reveal">
+        <h2>About This App</h2>
+        <p>
+            This platform provides intelligent services with smooth UI and
+            interactive chatbot support.
+        </p>
+    </section>
+
+    <section class="section alt reveal">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✔ Fast</li>
+            <li>✔ Secure</li>
+            <li>✔ Easy to Use</li>
+        </ul>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
