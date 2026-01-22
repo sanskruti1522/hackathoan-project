@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1E4E4E, #4EC1C4);
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1E4E4E;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    cursor: pointer;
+}
+
+.logout {
+    background: #F7D046;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* CARD */
+.profile-card {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profile-card.success {
+    animation: pulse 0.4s ease;
+}
+
+/* IMAGE */
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #4EC1C4;
+}
+
+.profile-card h2 {
+    margin-bottom: 25px;
+    color: #1E4E4E;
+}
+
+/* FORM */
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #1E4E4E, #4EC1C4);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.save-btn.loading {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* SUCCESS TEXT */
+.success-text {
+    display: none;
+    color: green;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background: #1E4E4E;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 12px;
+    transition: right 0.5s ease;
+}
+
+.toast.show {
+    right: 20px;
+}
+
+/* ANIMATION */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
