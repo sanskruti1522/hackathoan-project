@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <!-- LEFT LOGIN AREA -->
+            <div class="left">
+                <h2>Login</h2>
+
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+
+                <button onclick="login()">Login</button>
+
+                <p class="switch">
+                    Don't have an account?
+                    <span onclick="showSignup()">Sign Up</span>
+                </p>
+            </div>
+
+            <!-- RIGHT WELCOME AREA -->
+            <div class="right">
+                <h1>WELCOME HOME !</h1>
+                <p>Access your account<br>by entering your<br>real credentials</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SIGN UP MODAL -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <h2>Sign Up</h2>
+
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+
+            <button onclick="signup()">Create Account</button>
+            <p onclick="closeSignup()">Close</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
