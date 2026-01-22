@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="graph.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Teacher</div>
+
+        <nav>
+            <ul>
+                <h1>
+                    <li><b>Graph📊</b></li>
+                </h1>
+            </ul>
+        </nav>
+
+        <div class="profile">
+            <!-- <img src="C:\Users\aayus\OneDrive\Documents\Desktop\y\y.jpg" alt="User">
+            <span>Aayush</span> -->
+        </div>
+    </header>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <input type="text" placeholder="Search...">
+        <input type="date">
+        <select>
+            <option>Graph📊</option>
+
+        </select>
+    </div>
+
+    <!-- SUMMARY CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Today's Attendance</h3>
+            <p>40</p>
+        </div>
+
+    </div>
+
+    <!-- CHARTS -->
+    <div class="charts">
+
+        <div class="chart-box">
+            <canvas id="barChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="graph.js"></script>
+</body>
+
+</html>
