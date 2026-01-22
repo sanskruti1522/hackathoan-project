@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #CCE5CF;
+}
+
+/* HEADER */
+.header {
+    background: #1f2235;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f9d423;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul .active {
+    color: #00c9a7;
+}
+
+.logout {
+    color: red;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+/* FILTERS */
+.filters {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    color: #00c9a7;
+}
+
+/* CHARTS */
+.charts {
+
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart-box {
+    background: white;
+    padding: 20px;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+}
