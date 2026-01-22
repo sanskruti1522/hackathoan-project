@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFF6F6;
+    color: #1E4E4E;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1E4E4E;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    background: #F7D046;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #4EC1C4, #EFF6F6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.chat-btn {
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #1E4E4E;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-btn:hover {
+    background: #000;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 15%;
+    background: #EFF6F6;
+}
+
+.section.alt {
+    background: #4EC1C4;
+    color: white;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade 1s forwards;
+}
+
+.delay {
+    animation-delay: 0.5s;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCROLL REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* HAMBURGER */
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MENU DROPDOWN */
+.menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    background: #EFF6F6;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu div {
+    padding: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu div:hover {
+    background: #4EC1C4;
+    color: white;
+}
