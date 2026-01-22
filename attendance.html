@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance | UDAAN</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="hamburger" onclick="go('home.html')">⬅</div>
+        <h2 style="margin: auto;">📋 Attendance</h2>
+    </nav>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- ADD ATTENDANCE -->
+        <div class="card" id="addCard">
+            <h3>Add Attendance</h3>
+
+            <input type="text" id="student" placeholder="Student Name">
+            <input type="date" id="date">
+
+            <select id="status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <button id="saveBtn" onclick="addAttendance()">Save</button>
+        </div>
+
+        <!-- ATTENDANCE LIST -->
+        <div class="card">
+            <h3>Attendance Records</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">Attendance Saved ✅</div>
+
+    <script type="module" src="attendance.js"></script>
+</body>
+
+</html>
