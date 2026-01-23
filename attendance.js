@@ -8,7 +8,7 @@ import {
 
 /* FIREBASE CONFIG */
 const firebaseConfig = {
-  apiKey: "AIzaSyDhG1KgIG_uR2VbgW_iT2a-KfhIV7Qa9O4",
+  apiKey: "",
   authDomain: "teachersathi-b36f1.firebaseapp.com",
   databaseURL: "https://teachersathi-b36f1-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "teachersathi-b36f1",
